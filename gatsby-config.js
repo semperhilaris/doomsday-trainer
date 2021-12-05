@@ -11,6 +11,7 @@ module.exports = {
     },
   },
   plugins: [
+    `gatsby-plugin-gatsby-cloud`,
     `gatsby-plugin-typescript`,
     `gatsby-plugin-react-helmet`,
     {
