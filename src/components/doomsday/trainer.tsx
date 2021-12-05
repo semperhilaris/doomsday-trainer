@@ -13,19 +13,29 @@ function getRamdomDateInBetween(start: string, end: string) {
 }
 
 const DoomsdayTrainer: FCC = () => {
-    const [date] = useState<Date>(getRamdomDateInBetween('1900-01-01', '2020-12-31'));
+    const [date, setDate] = useState<Date>(getRamdomDateInBetween('1900-01-01', '2020-12-31'));
     const [showSolution, setShowSolution] = useState<boolean>(false);
+
+    function reset() {
+        setShowSolution(false);
+        setDate(getRamdomDateInBetween('1900-01-01', '2020-12-31'));
+    }
 
     return (
         <div>
             <Typography component="h1" variant="h2" align="center" gutterBottom>
                 The day of<br/>
                 <strong><Moment format="YYYY-MM-DD">{ date }</Moment></strong><br/>
-                is a …<br/>
-                <Lazy type="fade" in={ showSolution } timeout={1500}>
-                    <strong><Moment format="dddd">{ date }</Moment>.</strong>
+                is a …
+                <Lazy type="fade" in={ showSolution } timeout={ {enter: 1500, exit: 0} }>
+                    <div>
+                        <strong><Moment format="dddd">{ date }</Moment>.</strong><br/>
+                        <Button onClick={() => { reset() }} variant="contained" color="primary">NEW DATE</Button>
+                    </div>
                 </Lazy>
-                <Button onClick={() => { setShowSolution(true) }}>CHECK</Button>
+                <Lazy type="fade" in={ !showSolution } timeout={ {enter: 1500, exit: 0} }>
+                    <Button onClick={() => { setShowSolution(true) }} variant="contained" color="primary">CHECK</Button>
+                </Lazy>
             </Typography>
         </div>
       );

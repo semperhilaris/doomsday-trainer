@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme: Theme) => ({
         backgroundColor: theme.palette.background.default
     },
     main: {
-        marginTop: '5rem',
+        marginTop: '2rem',
         backgroundColor: theme.palette.background.default
     }
 }));
