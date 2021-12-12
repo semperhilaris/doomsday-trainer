@@ -21,7 +21,7 @@ const Footer: FC = () => {
         <footer className={styles.footer}>
             <Container maxWidth="md">
                 <Typography variant="body1" color="textSecondary">
-                    © {new Date().getFullYear()}, David Fröhlich
+                    © {new Date().getFullYear()} Doomsday Trainer
                 </Typography>
             </Container>
         </footer>
