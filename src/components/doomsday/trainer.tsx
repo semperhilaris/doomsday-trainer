@@ -1,4 +1,4 @@
-import React, { useState }  from 'react';
+import React, { useState, useEffect }  from 'react';
 import Moment from 'react-moment';
 import { Typography, Button, Box } from '@material-ui/core';
 
@@ -16,8 +16,19 @@ const DoomsdayTrainer: FCC = () => {
     const [date, setDate] = useState<Date>(getRamdomDateInBetween('1900-01-01', '2020-12-31'));
     const [showSolution, setShowSolution] = useState<boolean>(false);
     const [isCorrect, setIsCorrect] = useState<boolean>(false);
+    const [seconds, setSeconds] = useState(0);
+
+    useEffect(() => {
+        if (!showSolution) {
+            const interval = setInterval(() => {
+                setSeconds(seconds => seconds + 1);
+            }, 1000);
+            return () => clearInterval(interval);
+        }
+    });
 
     function reset() {
+        setSeconds(0);
         setShowSolution(false);
         setDate(getRamdomDateInBetween('1900-01-01', '2020-12-31'));
     }
@@ -37,6 +48,9 @@ const DoomsdayTrainer: FCC = () => {
                     <div>
                         <Box sx={{ fontWeight: 'bold', color: isCorrect ? '#4caf50' : '#ef5350' }}>
                             <Moment format="dddd">{ date }</Moment>.
+                        </Box>
+                        <Box sx={{ fontSize: '1rem', color: '#808080' }}>
+                            Your time: <strong>{ seconds }</strong> seconds.
                         </Box>
                         <Button onClick={() => { reset() }} variant="contained" color="primary">NEW DATE</Button>
                     </div>
