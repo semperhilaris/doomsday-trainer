@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import Moment from 'react-moment';
+import moment from 'moment';
 import { Typography, Button, Box, Fade } from '@mui/material';
 
 function getRamdomDateInBetween(start: string, end: string) {
@@ -12,8 +13,9 @@ function getRamdomDateInBetween(start: string, end: string) {
 }
 
 export default function DoomsdayTrainer() {
+  const today = moment(new Date()).format(`YYYY-MM-DD`);
   const [date, setDate] = useState<Date>(
-    getRamdomDateInBetween(`1900-01-01`, `2020-12-31`),
+    getRamdomDateInBetween(`1900-01-01`, today),
   );
   const [showSolution, setShowSolution] = useState<boolean>(false);
   const [isCorrect, setIsCorrect] = useState<boolean>(false);
@@ -31,7 +33,7 @@ export default function DoomsdayTrainer() {
   function reset() {
     setSeconds(0);
     setShowSolution(false);
-    setDate(getRamdomDateInBetween(`1900-01-01`, `2020-12-31`));
+    setDate(getRamdomDateInBetween(`1900-01-01`, today));
   }
 
   function check(solution: number) {
