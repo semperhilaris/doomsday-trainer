@@ -1,37 +1,106 @@
-# Gatsby's Typescript + Material-ui starter
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/26466516/169722691-77a6ca86-df54-4a0e-b952-48c3f3ed7526.png" alt="Gatsby TypeScript Starter">
+</p>
 
-Kick off your project with this [Material-ui](https://material-ui.com/) boilerplate (forked from [this](https://github.com/Junscuzzy/gatsby-material-typescript-starter) repository and edited with personal preferences). 
+<br />
 
-This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+<div align="center"><strong>Non-opinionated TypeScript starter for Gatsby</strong></div>
+<div align="center">A TypeScript starter for Gatsby. No plugins and styling. Exactly the necessary to start.</div>
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+<br />
 
-## 🚀 Quick start
+<div align="center">
+  <img src="https://img.shields.io/static/v1?label=PRs&message=welcome&style=flat-square&color=5e17eb&labelColor=000000" alt="PRs welcome!" />
 
-1.  **Create a Gatsby site.**
+  <img alt="License" src="https://img.shields.io/github/license/jpedroschmitz/gatsby-starter-ts?style=flat-square&color=5e17eb&labelColor=000000">
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+  <a href="https://twitter.com/intent/follow?screen_name=jpedroschmitz">
+    <img src="https://img.shields.io/twitter/follow/jpedroschmitz?style=flat-square&color=5e17eb&labelColor=000000" alt="Follow @jpedroschmitz" />
+  </a>
+</div>
 
-    ```shell
-    # create a new Gatsby site using the starter
-    gatsby new gatsby-material-typescript-starter https://github.com/Lindeneg/gatsby-material-typescript-starter
-    ```
+<div align="center">
+  <sub>Created by <a href="https://twitter.com/jpedroschmitz">João Pedro</a> with the help of many <a href="https://github.com/jpedroschmitz/gatsby-starter-ts/graphs/contributors">wonderful contributors</a>.</sub>
+</div>
 
-1.  **Start developing.**
+<br />
 
-    Navigate into your new site’s directory and start it up.
+## Features
 
-    ```shell
-    cd gatsby-material-typescript-starter/
-    yarn develop
-    ```
+- ⚡️ Gatsby 5
+- ⚛️ React 18
+- ⛑ TypeScript
+- 🐐 Tests — Vitest and Testing Library out of the box
+- 📏 ESLint — To find and fix problems in your code
+- 💖 Prettier — Code Formatter for consistent style
+- 🐶 Husky — For running scripts before committing
+- 🚓 Commitlint — To make sure your commit messages follow the convention
+- 🖌 Renovate — To keep your dependencies up to date
+- 🚫 lint-staged — Run ESLint and Prettier against staged Git files
+- 👷 PR Workflow — Run Type Check & Linters on Pull Requests
+- ⚙️ EditorConfig - Consistent coding styles across editors and IDEs
+- 🗂 Path Mapping — Import components or images using the `@` prefix
 
-1.  **Open the source code and start editing!**
+## Quick Start
 
-    Your site is now running at `http://localhost:8000`!
+The best way to start with this template is using the [Gatsby CLI](https://www.gatsbyjs.com/docs/reference/gatsby-cli/).
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+```
+npx gatsby new starter-ts https://github.com/jpedroschmitz/gatsby-starter-ts
+```
 
-    Open the `gatsby-material-typescript-starter` directory in your code editor of choice and edit `src/pages/index.tsx`. Save your changes and the browser will update in real time!
+### Development
 
-All the commands are in your `package.json > scripts`.
+To start the project locally, run:
+
+```bash
+pnpm start
+```
+
+Open `http://localhost:8000` with your browser to see the result.
+
+## Documentation
+
+### Requirements
+
+- Node.js >= 18
+- pnpm 7
+
+### Directory Structure
+
+- [`__helpers__`](./__helpers__/) — Helpers files for testing configuration.<br>
+- [`__mocks__`](./__mocks__/) — Mocks for testing.<br>
+- [`.github`](.github) — GitHub configuration including the CI workflow.<br>
+- [`.husky`](.husky) — Husky configuration and hooks.<br>
+- [`src`](./src) — Application source code, including pages, components, styles.
+
+### Scripts
+
+- `pnpm start` — Starts the application in development mode at `http://localhost:8000`.
+- `pnpm build` — Compile your application and make it ready for deployment.
+- `pnpm serve` — Serve the production build of your site
+- `pnpm clean` — Wipe out the cache (`.cache` folder).
+- `pnpm type-check` — Validate code using TypeScript compiler.
+- `pnpm lint` — Runs ESLint for all files in the `src` directory.
+- `pnpm format` — Runs Prettier for all files in the `src` directory.
+- `pnpm test` — Run tests with Vitest.
+- `pnpm test:watch` — Run tests on watch mode.
+
+### Path Mapping
+
+TypeScript are pre-configured with custom path mappings. To import components or files, use the `@` prefix.
+
+```tsx
+import { Button } from '@/components/Button';
+
+// To import images or other files from the static folder
+import avatar from '@/static/avatar.png';
+```
+
+### Switch to Yarn/npm
+
+This starter uses pnpm by default, but this choice is yours. If you'd like to switch to Yarn/npm, delete the `pnpm-lock.yaml` file, install the dependencies with Yarn/npm, change the CI workflow, Husky Git hooks to use Yarn/npm commands, and uninstall the `gatsby-plugin-pnpm` plugin (you also need to remove it from the `gatsby-config` file).
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for more information.

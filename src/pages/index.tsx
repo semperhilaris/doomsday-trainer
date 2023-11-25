@@ -1,47 +1,16 @@
-import React from 'react';
-import { Link as GatsbyLink } from 'gatsby';
-import { Grid, Button, Theme } from '@material-ui/core';
-import { makeStyles } from '@material-ui/styles';
+import SEO from '../components/SEO';
+import DoomsdayTrainer from '@/components/DoomsdayTrainer';
+import Logo from '@/assets/svg/logo.inline.svg';
 
-import { Seo, Hero, Lazy } from '../components';
-import { FC } from '../util';
+export default function Home() {
+  return (
+    <main>
+      <div className="bg-ash flex flex-col items-stretch justify-center align-center min-h-screen">
+        <Logo className="w-full	max-w-screen-md h-auto mx-auto" />
+        <DoomsdayTrainer />
+      </div>
+    </main>
+  );
+}
 
-const useStyles = makeStyles((theme: Theme) => ({
-    heroButtons: {
-        marginTop: theme.spacing(4)
-    }
-}));
-
-const IndexPage: FC = () => {
-    const styles = useStyles();
-    return (
-        <>
-            <Seo title="Home" />
-            <Lazy type="grow" delay={500} timeout={1000} mountOnEnter unmountOnExit>
-                <Hero
-                    title="Welcome"
-                    description="Here you can practice calculating the weekday of any date in the past or future!"
-                >
-                    <div className={styles.heroButtons}>
-                        <Grid container spacing={2} justify="center">
-                            <Grid item>
-                                <Lazy type="slide" direction="left" delay={500}>
-                                    <Button
-                                        component={GatsbyLink}
-                                        to="/practice/"
-                                        variant="contained"
-                                        color="primary"
-                                    >
-                                        Start
-                                    </Button>
-                                </Lazy>
-                            </Grid>
-                        </Grid>
-                    </div>
-                </Hero>
-            </Lazy>
-        </>
-    );
-};
-
-export default IndexPage;
+export const Head = () => <SEO />;

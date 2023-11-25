@@ -1,0 +1,53 @@
+on: [push]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+    name: Publish to Cloudflare Pages
+    outputs:
+      url: ${{ steps.publish_to_pages.outputs.url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 7
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: 'pnpm'
+      - name: Install dependencies
+        id: install_code
+        run: pnpm install --no-frozen-lockfile
+      - name: Build
+        id: build_code
+        run: pnpm build
+      - name: Publish to Cloudflare Pages
+        id: publish_to_pages
+        uses: cloudflare/pages-action@1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: 8743db2c8d6df365d23ef3e0722e7f0f
+          projectName: doomsday-trainer
+          directory: public
+          # Optional: Enable this if you want to have GitHub Deployments triggered
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+  lighthouse:
+    runs-on: ubuntu-latest
+    needs: publish # runs after publish has finished
+    name: Audit URLs using Lighthouse
+    steps:
+      - uses: actions/checkout@v4
+      - name: Audit URLs using Lighthouse
+        uses: treosh/lighthouse-ci-action@v10
+        with:
+          urls: |
+            ${{needs.publish.outputs.url}}
+          budgetPath: ./.github/workflows/lighthouse-budget.json # test performance budgets
+          uploadArtifacts: true # save results as an action artifacts
+          temporaryPublicStorage: true # upload lighthouse report to the temporary
