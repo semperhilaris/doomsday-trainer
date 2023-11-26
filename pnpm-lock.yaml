@@ -30,8 +30,8 @@ dependencies:
     specifier: 5.12.3
     version: 5.12.3(gatsby@5.12.11)(graphql@16.8.1)
   gatsby-plugin-material-ui:
-    specifier: 4.0.2
-    version: 4.0.2(@emotion/react@11.11.1)(gatsby@5.12.11)
+    specifier: 4.1.0
+    version: 4.1.0(@emotion/react@11.11.1)(gatsby@5.12.11)
   gatsby-plugin-pnpm:
     specifier: 1.2.10
     version: 1.2.10(gatsby@5.12.11)
@@ -7464,11 +7464,11 @@ packages:
       - graphql
     dev: false
 
-  /gatsby-plugin-material-ui@4.0.2(@emotion/react@11.11.1)(gatsby@5.12.11):
-    resolution: {integrity: sha512-dqrDmFLiTbanSW8geUOxMrmm9E73SOI5DvqvJSDGIy5aRdgQ6q/36mCkXFxKfpK93zJtrbeMVhcAMbBw83nzfg==}
+  /gatsby-plugin-material-ui@4.1.0(@emotion/react@11.11.1)(gatsby@5.12.11):
+    resolution: {integrity: sha512-g43jWiH/05tqdeCXVzPSe/L/98nPYfVANGmdilSTvfLshNPTppnls/Zs98TXmhbdHV/Bgov0hQsYIrBgcKWHbQ==}
     peerDependencies:
       '@emotion/react': ^11.4.0
-      gatsby: ^3.0.0
+      gatsby: ^3.0.0 || ^4.0.0
     dependencies:
       '@emotion/cache': 11.11.0
       '@emotion/react': 11.11.1(@types/react@18.2.38)(react@18.2.0)
