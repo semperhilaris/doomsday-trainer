@@ -34,7 +34,7 @@
   "dependencies": {
     "@emotion/react": "11.11.1",
     "@emotion/styled": "11.11.0",
-    "@floating-ui/react": "0.26.2",
+    "@floating-ui/react": "0.26.3",
     "@iconify-icon/react": "1.0.8",
     "@mui/material": "5.14.18",
     "gatsby": "5.12.11",
