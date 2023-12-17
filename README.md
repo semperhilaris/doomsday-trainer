@@ -1,29 +1,14 @@
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/26466516/169722691-77a6ca86-df54-4a0e-b952-48c3f3ed7526.png" alt="Gatsby TypeScript Starter">
+  <img src="./src/assets/images/favicon.png" alt="Doomsday Trainer Icon" style="max-width:200px;padding:2rem;">
 </p>
 
-<br />
+# Doomsday Trainer
 
-<div align="center"><strong>Non-opinionated TypeScript starter for Gatsby</strong></div>
-<div align="center">A TypeScript starter for Gatsby. No plugins and styling. Exactly the necessary to start.</div>
+This is a web app that helps you practice the [Doomsday algorithm](https://en.wikipedia.org/wiki/Doomsday_rule) by John Conway, a method for calculating the day of the week of any given date. The app shows you a random date and lets you guess what weekday it was. You can check your answer and how long you took.
 
-<br />
+The app is built with [Gatsby](https://www.gatsbyjs.com/), a React-based framework that generates fast and secure websites. You can use the app in your web browser, or install it as a PWA (progressive web app) on your device.
 
-<div align="center">
-  <img src="https://img.shields.io/static/v1?label=PRs&message=welcome&style=flat-square&color=5e17eb&labelColor=000000" alt="PRs welcome!" />
-
-  <img alt="License" src="https://img.shields.io/github/license/jpedroschmitz/gatsby-starter-ts?style=flat-square&color=5e17eb&labelColor=000000">
-
-  <a href="https://twitter.com/intent/follow?screen_name=jpedroschmitz">
-    <img src="https://img.shields.io/twitter/follow/jpedroschmitz?style=flat-square&color=5e17eb&labelColor=000000" alt="Follow @jpedroschmitz" />
-  </a>
-</div>
-
-<div align="center">
-  <sub>Created by <a href="https://twitter.com/jpedroschmitz">João Pedro</a> with the help of many <a href="https://github.com/jpedroschmitz/gatsby-starter-ts/graphs/contributors">wonderful contributors</a>.</sub>
-</div>
-
-<br />
+Project based on the [Gatsby Typescript Starter](https://github.com/jpedroschmitz/gatsby-starter-ts).
 
 ## Features
 
@@ -103,4 +88,4 @@ This starter uses pnpm by default, but this choice is yours. If you'd like to sw
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for more information.
+This project is licensed under the BSD Zero Clause License - see the [LICENSE](LICENSE) file for more information.
