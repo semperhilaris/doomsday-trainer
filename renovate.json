@@ -20,5 +20,8 @@
       "packageNames": ["node"],
       "enabled": false
     }
+  ],
+  "schedule": [
+    "every weekend"
   ]
 }
