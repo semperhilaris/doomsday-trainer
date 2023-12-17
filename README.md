@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./src/assets/images/favicon.png" alt="Doomsday Trainer Icon" style="max-width:200px;padding:2rem;">
+  <img src="./src/assets/svg/logo.inline.png" alt="Doomsday Trainer Icon">
 </p>
 
 # Doomsday Trainer
