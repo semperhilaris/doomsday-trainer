@@ -12,8 +12,8 @@ dependencies:
     specifier: 11.11.0
     version: 11.11.0(@emotion/react@11.11.1)(@types/react@18.2.45)(react@18.2.0)
   '@floating-ui/react':
-    specifier: 0.26.3
-    version: 0.26.3(react-dom@18.2.0)(react@18.2.0)
+    specifier: 0.26.4
+    version: 0.26.4(react-dom@18.2.0)(react@18.2.0)
   '@iconify-icon/react':
     specifier: 1.0.8
     version: 1.0.8(react@18.2.0)
@@ -2103,8 +2103,8 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /@floating-ui/react@0.26.3(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-iKH8WRR0L/nLiM6qavFZxkyegIZRMxGnM9aKEc71M4wRlUNkgTamjPsOQXy11oZbDOH37MiTbk/nAPn9M2+shA==}
+  /@floating-ui/react@0.26.4(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-pRiEz+SiPyfTcckAtLkEf3KJ/sUbB4X4fWMcDm27HT2kfAq+dH+hMc2VoOkNaGpDE35a2PKo688ugWeHaToL3g==}
     peerDependencies:
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
