@@ -84,7 +84,7 @@
     "husky": "8.0.3",
     "identity-obj-proxy": "3.0.0",
     "jsdom": "22.1.0",
-    "lint-staged": "15.1.0",
+    "lint-staged": "15.2.0",
     "postcss": "8.4.32",
     "prettier": "3.1.1",
     "svg-react-loader": "0.4.6",
