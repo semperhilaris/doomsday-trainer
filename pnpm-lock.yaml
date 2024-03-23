@@ -15,8 +15,8 @@ dependencies:
     specifier: 0.26.9
     version: 0.26.9(react-dom@18.2.0)(react@18.2.0)
   '@iconify-icon/react':
-    specifier: 1.0.8
-    version: 1.0.8(react@18.2.0)
+    specifier: 2.0.1
+    version: 2.0.1(react@18.2.0)
   '@mui/material':
     specifier: 5.15.14
     version: 5.15.14(@emotion/react@11.11.4)(@emotion/styled@11.11.0)(@types/react@18.2.67)(react-dom@18.2.0)(react@18.2.0)
@@ -2420,12 +2420,12 @@ packages:
   /@humanwhocodes/object-schema@2.0.2:
     resolution: {integrity: sha512-6EwiSjwWYP7pTckG6I5eyFANjPhmPjUX9JRLUSfNPC7FX7zK9gyZAfUEaECL6ALTpGX5AjnBq3C9XmVWPitNpw==}
 
-  /@iconify-icon/react@1.0.8(react@18.2.0):
-    resolution: {integrity: sha512-T8Hzz0cQ+08hboS1KFt5t/lBxwpZZuMNVxld2O7vfarPd6mZt9DRRQiM5RIYfB6hxVNddDuzyxbqqfGcMU27pA==}
+  /@iconify-icon/react@2.0.1(react@18.2.0):
+    resolution: {integrity: sha512-1m6L2yNsSJ25k5baQRqNqh2J0w+91PwOn1WdBIR6ZTwxePbsZC8k3NNVc6m9BJObsIQdUlMA1NGj8el4tfbsVg==}
     peerDependencies:
       react: '>=16'
     dependencies:
-      iconify-icon: 1.0.8
+      iconify-icon: 2.0.0
       react: 18.2.0
     dev: false
 
@@ -8532,8 +8532,8 @@ packages:
     hasBin: true
     dev: true
 
-  /iconify-icon@1.0.8:
-    resolution: {integrity: sha512-jvbUKHXf8EnGGArmhlP2IG8VqQLFFyTvTqb9LVL2TKTh7/eCCD1o2HHE9thpbJJb6B8hzhcFb6rOKhvo7reNKA==}
+  /iconify-icon@2.0.0:
+    resolution: {integrity: sha512-38ArOkxmyD9oDbJBkxaFpE6eZ0K3F9Sk+3x4mWGfjMJaxi3EKrix9Du4iWhgBFT3imKC4FJJE34ur2Rc7Xm+Uw==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: false
