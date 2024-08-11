@@ -83,7 +83,7 @@
     "gatsby-plugin-postcss": "6.13.1",
     "husky": "8.0.3",
     "identity-obj-proxy": "3.0.0",
-    "jsdom": "22.1.0",
+    "jsdom": "24.1.1",
     "lint-staged": "15.2.8",
     "postcss": "8.4.41",
     "prettier": "3.3.3",
