@@ -136,8 +136,8 @@ importers:
         specifier: 17.10.2
         version: 17.10.2(eslint@9.9.1(jiti@2.4.2))
       eslint-plugin-prettier:
-        specifier: 5.2.2
-        version: 5.2.2(@types/eslint@8.44.9)(eslint-config-prettier@9.1.0(eslint@9.9.1(jiti@2.4.2)))(eslint@9.9.1(jiti@2.4.2))(prettier@3.3.3)
+        specifier: 5.2.3
+        version: 5.2.3(@types/eslint@8.44.9)(eslint-config-prettier@9.1.0(eslint@9.9.1(jiti@2.4.2)))(eslint@9.9.1(jiti@2.4.2))(prettier@3.3.3)
       eslint-plugin-promise:
         specifier: 7.1.0
         version: 7.1.0(eslint@9.9.1(jiti@2.4.2))
@@ -3945,8 +3945,8 @@ packages:
     peerDependencies:
       eslint: '>=8.23.0'
 
-  eslint-plugin-prettier@5.2.2:
-    resolution: {integrity: sha512-1yI3/hf35wmlq66C8yOyrujQnel+v5l1Vop5Cl2I6ylyNTT1JbuUUnV3/41PzwTzcyDp/oF0jWE3HXvcH5AQOQ==}
+  eslint-plugin-prettier@5.2.3:
+    resolution: {integrity: sha512-qJ+y0FfCp/mQYQ/vWQ3s7eUlFEL4PyKfAJxsnYTJ4YT73nsJBWqmEpFryxV9OeUiqmsTsYJ5Y+KDNaeP31wrRw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       '@types/eslint': '>=8.0.0'
@@ -5304,6 +5304,7 @@ packages:
 
   lodash.get@4.4.2:
     resolution: {integrity: sha512-z+Uw/vLuy6gQe8cfaFWD7p0wVv8fJl3mbzXh33RS+0oW2wvUqiRXiQ69gLWSLpgB5/6sU+r6BlQR0MBILadqTQ==}
+    deprecated: This package is deprecated. Use the optional chaining (?.) operator instead.
 
   lodash.isplainobject@4.0.6:
     resolution: {integrity: sha512-oSXzaWypCMHkPC3NvBEaPHf0KsA5mvPrOPgQWDsbg8n7orZ290M0BmC/jgRZ4vcJ6DTAhjrsSYgdsW/F+MFOBA==}
@@ -12486,7 +12487,7 @@ snapshots:
       minimatch: 9.0.5
       semver: 7.6.0
 
-  eslint-plugin-prettier@5.2.2(@types/eslint@8.44.9)(eslint-config-prettier@9.1.0(eslint@9.9.1(jiti@2.4.2)))(eslint@9.9.1(jiti@2.4.2))(prettier@3.3.3):
+  eslint-plugin-prettier@5.2.3(@types/eslint@8.44.9)(eslint-config-prettier@9.1.0(eslint@9.9.1(jiti@2.4.2)))(eslint@9.9.1(jiti@2.4.2))(prettier@3.3.3):
     dependencies:
       eslint: 9.9.1(jiti@2.4.2)
       prettier: 3.3.3
